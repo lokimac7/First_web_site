@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100&subset=latin-ext')
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800)
+
+$color1: white
+$color2: gray
+$color3: #313234
+$color4: #3498db
+$color5: #7f8c8d
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+	display: block
+
+body 
+	line-height: 1
+
+ol, 
+ul 
+	list-style: none
+
+blockquote, q 
+	quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after 
+	content: ''
+	content: none
+
+table 
+	border-collapse: collapse
+	border-spacing: 0
+
+body 
+	margin: 0
+	font-family: 'Open Sans', sans-serif
+
+* 
+	box-sizing: border-box
+
+.everything 
+	max-width: 1200px	
+	margin: 0 auto
+
+.row:before,
+.row:after 
+	content: ""
+	display: table
+
+.row:after 
+	clear: both
+
+[class*="col-"] 
+	float: left
+	min-height: 1px
+
+.col-1 
+	width: 8.33%
+
+.col-2 
+	width: 16.66%
+
+.col-3 
+	width: 25%
+
+.col-4 
+	width: 33.33%
+
+.col-5 
+	width: 41.66%
+
+.col-6 
+	width: 50%
+
+.col-7 
+	width: 58.33%
+
+.col-8 
+	width: 66.66%
+
+.col-9 
+	width: 75%
+
+.col-10 
+	width: 83.33%
+
+.col-11 
+	width: 91.66%
+
+.col-12 
+	width: 100%
+
+.col-offset-0point5 
+	margin-left: 4.165%
+
+.col-offset-1 
+	margin-left: 8.33%
+
+.col-offset-1point25 
+	margin-left: 10.4125%
+
+.col-offset-1point5
+
+	margin-left: 12.5%
+
+.col-offset-2 
+	margin-left: 16.66%
+
+.col-offset-3 
+	margin-left: 25%
+
+.col-offset-4 
+	margin-left: 33.33%
+
+.col-offset-5 
+	margin-left: 41.66%
+
+.col-offset-6 
+	margin-left: 50%
+
+.col-offset-7 
+	margin-left: 58.33%
+
+.col-offset-8 
+	margin-left: 66.66%
+
+.col-offset-9 
+	margin-left: 75%
+
+.col-offset-10 
+	margin-left: 83.33%
+
+.col-offset-11 
+	margin-left: 91.66%
+
+.col-offset-12 
+	margin-left: 100%
+
+header 
+	background: $color3
+	min-height: 100px
+	nav
+		ul
+			margin: 0
+			padding-right: 50px
+			list-style-type: none
+			float: right
+			font-size: 0px
+
+			li
+				display: inline-block
+				font-size: 20px
+				
+				a
+					line-height: 100px
+					padding: 0 20px
+					display: block
+					color: $color1
+					text-decoration: none
+					text-transform: uppercase	
+					&:hover
+						background: $color4
+
+		img
+			padding: 35px 0 10px 35px
+
+.hero 
+	width: 100%
+	height: 450px
+	box-sizing: border-box
+	text-align: center
+	background: url(https://cdn.pixabay.com/photo/2016/09/01/07/46/pink-1635387_960_720.jpg)
+	background-size: cover
+	background-position: center
+	overflow: hidden
+
+.slogan 
+	float: right
+	max-height: 800px
+	color: $color1
+	padding: 20px
+	padding-right: 180px
+	position: relative
+	top: 250px
+	text-align: left
+	font-size: 28px
+	line-height: 25px
+	background: rgba(70, 70, 70, 0.7)
+
+	span 
+		font-weight: bold
+		font-size: 36px
+		line-height: 40px
+
+.laptop-globe-cogs-i
+	font-size: 60px
+	padding: 15px
+	border-radius: 15%	
+
+.laptop-globe-cogs-h2
+	font-size: 22px
+	font-weight: bold
+	text-align: center
+	margin-top: 10px
+	line-height: 26px
+
+.laptop-globe-cogs-p
+	font-size: 16px
+	text-align: center
+	margin-top: 10px
+	line-height: 20px
+	
+.laptop 
+	max-width: 300px
+		
+	i 
+		@extend .laptop-globe-cogs-i
+		background: $color5
+		color: $color1
+	
+	h2 
+		@extend .laptop-globe-cogs-h2	
+		color: $color5
+
+	p 
+		@extend .laptop-globe-cogs-p		
+		color: $color2
+
+.globe 
+	max-width: 300px
+
+	i 
+		@extend .laptop-globe-cogs-i
+		background: $color4
+		color: $color1
+
+	h2 
+		@extend .laptop-globe-cogs-h2
+		color: $color4
+
+	p 
+		@extend .laptop-globe-cogs-p
+		color: $color2
+
+.cogs 
+	max-width: 300px
+
+	i 
+		@extend .laptop-globe-cogs-i
+		background: $color5
+		color: $color1
+
+	h2 
+		@extend .laptop-globe-cogs-h2
+		color: $color5
+
+	p 
+		@extend .laptop-globe-cogs-p
+		color: $color2
+
+.icons 
+	line-height: 0
+
+section.container 
+	margin: 100px auto
+	text-align: center
+
+.text 
+	h3 
+		font-weight: 800
+		font-size: 28px
+		margin: 20px
+
+	p 
+		font-size: 18px
+		max-width: 800px
+		margin: auto
+		color: #95a5a6
+
+.gallery,
+.gallery .col-3,
+.gallery .col-6 
+	line-height: 0
+	position: relative
+
+.gallery 
+	img 
+		width: 100%
+		overflow: hidden
+		height: 300px
+
+	.image 
+		width: 100%
+		height: 300px
+		margin: 0 auto
+
+.layer-main
+	background: rgba(0, 0, 0, 0)
+	width: 100%
+	height: 100%
+	position: absolute
+	transition: background 800ms
+	color: $color1
+	text-align: center
+
+.fa-main
+	position: relative
+	top: 50%
+	transform: translateY(-50%)
+	margin-right: 25px
+	color: $color1
+	opacity: 0
+	transition: opacity 800ms
+
+.col-3 
+	.layer
+		@extend .layer-main
+
+		.fa 
+			@extend .fa-main
+			&:last-child
+				margin-right: 0	
+.col-6 
+	.layer 
+		@extend .layer-main
+
+		.fa 
+			@extend .fa-main
+
+.col-3:hover .layer 
+	background: rgba(0, 0, 0, 0.5)
+
+.col-3:hover .layer .fa 
+	opacity: 1
+
+.col-6:hover .layer 
+	background: rgba(0, 0, 0, 0.5)
+
+.col-6:hover .layer .fa 
+	opacity: 1
+
+.workers 
+	margin: 100px auto
+	text-align: center
+
+	.col-2 
+		min-width: 200px
+		float: none
+		display: inline-block
+		margin: 15px 15px
+
+	.image 
+		border-radius: 50%
+		height: 200px
+		width: 200px
+		overflow: hidden
+		position: relative
+
+	img 
+		height: 100%
+		width: 100%
+
+	h4 
+		text-align: center
+		margin: 10px auto
+
+	.layer 	
+		@extend .layer-main
+		color: $color1
+
+.workers .col-2:hover .layer 
+	background: rgba(0, 0, 0, .3)
+
+.picture 	
+	background: $color2
+	min-height: 300px
+
+	img 
+		min-height: 250px
+		border-radius: 5%
+		float: right
+		margin-top: 50px
+
+	h2 
+		padding-top: 25px
+		padding-left: 25px
+		font-weight: 800
+		font-size: 28px
+		margin: 20px
+		color: $color1
+
+	p 
+		font-size: 20px
+		padding-top: 40px
+		padding-left: 45px
+		color: $color1
+		line-height: 24px
+		font-family: 'Roboto', sans-serif
+		font-weight: 100
+
+.numbers 
+	text-align: center
+	margin: 100px auto
+
+	h5 
+		font-weight: 800
+		font-size: 50px
+
+	p 
+		color: $color4
+		font-size: 20px
+		font-weight: 800
+		margin: 10px
+
+.text2 
+	font-style: italic
+
+footer 
+	background: $color3
+
+	.col-3
+		min-height: 250px
+
+	h2 
+		color: $color1
+		font-size: 24px
+		font-weight: 700
+		margin-top: 25px
+		margin-left: 10px
+		position: relative
+		display: inline-block
+		&::after
+			content: ''
+			display: block
+			width: 75px
+			height: 2px
+			background: $color1
+			position: absolute
+			top: 50%
+			left: calc(100% + 15px)
+
+	p 
+		padding: 10px
+		color: $color1
+		font-family: 'Roboto', sans-serif
+		font-weight: 100
+		line-height: 20px
+	
+.copyrights 
+	background: #202123
+	color: $color1
+	line-height: 80px
+	text-align: center
+	font-size: 20px
+
+.contact h5 
+	color: $color1
+	padding: 10px
+	font-weight: bold
+
+button 
+	background: $color4
+	color: $color1
+	border: none
+	height: 30px
+	width: 30px
+	margin: 5px
+	font-size: 20px
+	transition: transform 0.8s
+	&:hover
+		background: #1276ba
+		transform: scale(1.5)	
+
+@media (max-width: 767px)
+
+	.col-s-1 
+		width: 8.33%
+	    
+	.col-s-2 
+		width: 16.66%
+	    
+	.col-s-3 
+		width: 25%
+	    
+	.col-s-4 
+		width: 33.33%
+	    
+	.col-s-5 
+		width: 41.66%
+	    
+	.col-s-6 
+		width: 50%
+	    
+	.col-s-7 
+		width: 58.33%
+	    
+	.col-s-8 
+		width: 66.66%
+	    
+	.col-s-9 
+		width: 75%
+	    
+	.col-s-10 
+		width: 83.33%
+	    
+	.col-s-11 
+		width: 91.66%
+	    
+	.col-s-12 
+		width: 100%
+		
+	header 
+		text-align: center	
+		
+		nav
+			ul
+				float: none
+				padding: 0
+				
+				li
+					display: block
+					
+					a
+						line-height: 35px
+						&:hover
+							background: none	
+			
+	header nav img 
+		padding: 20px 0
+		
+	.icons .col-s-12 
+		float: none
+		   
+	.laptop,
+	.globe,
+	.cogs 
+		margin: 30px auto
+	
+	.text p 
+		padding: 20px 30px
+	
+	.gallery .col-3:hover .layer 
+		background: rgba(0, 0, 0, 0)	
+		
+	.gallery .col-3:hover .layer .fa 
+		opacity: 0
+		
+	.gallery .col-6:hover .layer 
+		background: rgba(0, 0, 0, 0)	
+		
+	.gallery .col-6:hover .layer .fa 
+		opacity: 0
+		
+	.numbers .col-s-12 
+		margin: 10px auto
+	
+	.workers 
+		.col-s-12 
+			float: none
+			margin: 20px auto
+			
+		.image 
+			margin: 20px auto
+		
+	.workers .col-2:hover .layer 
+		background: rgba(0, 0, 0, 0)
+	 
+	.picture 
+		padding-bottom: 40px
+		text-align: center
+	   
+		img 
+			float: none
+	     
+	.picture h2,
+	.picture p 
+		text-align: left
+	  
+	footer .col-s-12 
+		padding: 0 60px
+		margin: 0 auto
+	        
+	footer h2::after 
+		width: 55px
+	     
+	button:hover 
+		background: $color4
+		transform: none
+	
+    
+
+
+
+
+
