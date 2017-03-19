@@ -1,0 +1,26 @@
+{
+  "name": "kodilla-grunt-example",
+  "version": "1.0.0",
+  "description": "Example grunt project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lokimac7/First_web_site.git"
+  },
+  "author": "Maciek Czerwinski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lokimac7/First_web_site/issues"
+  },
+  "homepage": "https://github.com/lokimac7/First_web_site#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}
